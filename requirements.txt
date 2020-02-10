@@ -44,7 +44,7 @@ more-itertools==8.1.0     # via pytest, zipp
 packaging==20.0           # via pytest
 paramiko==2.7.1           # via fabric
 pathlib2==2.3.5           # via pytest
-pillow==5.4.1
+pillow==6.2.0
 pluggy==0.13.1            # via pytest
 progressbar2==3.47.0      # via django-stdimage
 psycopg2==2.8.4
