@@ -1,0 +1,108 @@
+// Variables
+$yellow: #ffc003;
+
+.acgh-body {
+    font-family: "Roboto Condensed";
+    font-size: 1rem;
+
+}
+
+a.text-yellow {
+    color: $yellow;
+}
+
+header {
+    background-image: url(../../../../static_root/img/acgh-head-bcg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.wrap-header-main {
+    background-color: rgba(0, 44, 65, 0.5);
+    font-size: 17px;
+
+    .top-header-line {
+        hr {
+            border-top: 2px solid #113146;
+            margin: 0;
+        }
+    }
+
+    .btn-feedback {
+        color: #fff;
+        text-transform: uppercase;
+        background-color: rgba(0, 87, 144, 1);
+        padding: 1rem 2.5rem;
+        border-radius: 0;
+
+        &:hover {
+            background-color: rgba(0, 87, 144, 0.7);
+            transition: 0.3s;
+        }
+    }
+
+    .header-main {
+        text-transform: uppercase;
+
+        .navbar {
+            padding: 2rem 0;
+
+        }
+
+        .nav-item.active .nav-link {
+            font-weight: bold;
+            border-bottom: 2px solid #fff;
+        }
+
+        .nav-link {
+            color: #fff;
+            border-bottom: 2px solid transparent;
+
+            &:hover {
+                border-bottom: 1px solid #fff;
+                transition: 0.3s;
+            }
+        }
+
+        .btn-outline-yellow {
+            color: $yellow;
+            font-size: 18px;
+            border-radius: 0;
+            padding: 1rem 2rem;
+            border: 2px solid $yellow;
+
+            &:hover {
+                color: #002c44;
+                background-color: $yellow;
+                transition: 0.3s;
+            }
+        }
+    }
+}
+
+.header-slider {
+    background-color: rgba(0, 29, 43, 0.42);
+
+
+    .carousel {
+        height: 500px;
+        color: #fff;
+    }
+
+    .btn-yellow {
+        color: #002c44;
+        font-size: 18px;
+        border-radius: 0;
+        padding: 1rem 2rem;
+        border: 2px solid $yellow;
+        background-color: $yellow;
+
+        &:hover {
+            color: $yellow;
+            background-color: transparent;
+            transition: 0.3s;
+        }
+    }
+
+}

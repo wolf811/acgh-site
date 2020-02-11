@@ -1,0 +1,69 @@
+.acgh-body {
+  font-family: "Roboto Condensed";
+  font-size: 1rem; }
+
+a.text-yellow {
+  color: #ffc003; }
+
+header {
+  background-image: url(../../../../static_root/img/acgh-head-bcg.png);
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.wrap-header-main {
+  background-color: rgba(0, 44, 65, 0.5);
+  font-size: 17px; }
+  .wrap-header-main .top-header-line hr {
+    border-top: 2px solid #113146;
+    margin: 0; }
+  .wrap-header-main .btn-feedback {
+    color: #fff;
+    text-transform: uppercase;
+    background-color: #005790;
+    padding: 1rem 2.5rem;
+    border-radius: 0; }
+    .wrap-header-main .btn-feedback:hover {
+      background-color: rgba(0, 87, 144, 0.7);
+      transition: 0.3s; }
+  .wrap-header-main .header-main {
+    text-transform: uppercase; }
+    .wrap-header-main .header-main .navbar {
+      padding: 2rem 0; }
+    .wrap-header-main .header-main .nav-item.active .nav-link {
+      font-weight: bold;
+      border-bottom: 2px solid #fff; }
+    .wrap-header-main .header-main .nav-link {
+      color: #fff;
+      border-bottom: 2px solid transparent; }
+      .wrap-header-main .header-main .nav-link:hover {
+        border-bottom: 1px solid #fff;
+        transition: 0.3s; }
+    .wrap-header-main .header-main .btn-outline-yellow {
+      color: #ffc003;
+      font-size: 18px;
+      border-radius: 0;
+      padding: 1rem 2rem;
+      border: 2px solid #ffc003; }
+      .wrap-header-main .header-main .btn-outline-yellow:hover {
+        color: #002c44;
+        background-color: #ffc003;
+        transition: 0.3s; }
+
+.header-slider {
+  background-color: rgba(0, 29, 43, 0.42); }
+  .header-slider .carousel {
+    height: 500px;
+    color: #fff; }
+  .header-slider .btn-yellow {
+    color: #002c44;
+    font-size: 18px;
+    border-radius: 0;
+    padding: 1rem 2rem;
+    border: 2px solid #ffc003;
+    background-color: #ffc003; }
+    .header-slider .btn-yellow:hover {
+      color: #ffc003;
+      background-color: transparent;
+      transition: 0.3s; }
+
+/*# sourceMappingURL=component.css.map */
