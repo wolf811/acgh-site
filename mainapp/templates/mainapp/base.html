@@ -33,20 +33,20 @@
     {% endblock %}
     <!-- components scss files -->
     <link rel="stylesheet" href="{% static 'owlcarousel/owl.theme.default.min.css' %}">
-    {% if site.font_family %}
+    {% comment %} TODO: Заменить style!!! {% endcomment %}
+    <!-- {% if site.font_family %}
+    <style>
+        body {
+            font-family: {{site.font_family}}, sans-serif;
+        }
+    </style>
+    {% endif %} -->
     <style>
     body {
-        font-family: {
-                {
-                site.font_family
-            }
-        }
-
-        ,
-        sans-serif;
+        font-family: 'Roboto Condensed', sans-serif;
+        font-size: 1rem;
     }
     </style>
-    {% endif %}
     <!-- HEADER -->
 </head>
 

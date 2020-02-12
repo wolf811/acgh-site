@@ -1,23 +1,19 @@
 // Variables
 $yellow: #ffc003;
 
-.acgh-body {
-    font-family: "Roboto Condensed";
-    font-size: 1rem;
-
-}
-
 a.text-yellow {
     color: $yellow;
 }
 
-header {
+.header-home {
     background-image: url(../../../../static_root/img/acgh-head-bcg.png);
     background-repeat: no-repeat;
     background-size: cover;
-
 }
 
+// .header-other {
+
+// }
 .wrap-header-main {
     background-color: rgba(0, 44, 65, 0.5);
     font-size: 17px;
@@ -26,6 +22,31 @@ header {
         hr {
             border-top: 2px solid #113146;
             margin: 0;
+        }
+
+        .form-control {
+            color: #fff;
+            padding: 1rem;
+            height: auto;
+        }
+
+        .input-group-append {
+            border-left: 2px solid #113146;
+            border-right: 2px solid #113146;
+
+
+            .btn {
+                padding: 1rem;
+                border-radius: 0;
+            }
+        }
+
+        .head-contact {
+            padding: 1rem 1.5rem;
+
+            &:first-child {
+                border-right: 2px solid #113146;
+            }
         }
     }
 
@@ -57,11 +78,22 @@ header {
 
         .nav-link {
             color: #fff;
+            font-size: 17px;
             border-bottom: 2px solid transparent;
 
             &:hover {
                 border-bottom: 1px solid #fff;
                 transition: 0.3s;
+            }
+        }
+
+        .navbar-toggler {
+            // border-radius: 0;
+            border: none;
+            color: #fff;
+
+            &:hover {
+                color: &yellow;
             }
         }
 
@@ -71,6 +103,7 @@ header {
             border-radius: 0;
             padding: 1rem 2rem;
             border: 2px solid $yellow;
+            text-transform: uppercase;
 
             &:hover {
                 color: #002c44;
@@ -84,10 +117,23 @@ header {
 .header-slider {
     background-color: rgba(0, 29, 43, 0.42);
 
-
     .carousel {
         height: 500px;
         color: #fff;
+
+        .carousel-inner {
+            border-left: 4px solid $yellow;
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+        }
+
+        p,
+        a {
+            font-size: 20px;
+        }
     }
 
     .btn-yellow {
@@ -97,6 +143,7 @@ header {
         padding: 1rem 2rem;
         border: 2px solid $yellow;
         background-color: $yellow;
+        text-transform: uppercase;
 
         &:hover {
             color: $yellow;
@@ -105,4 +152,141 @@ header {
         }
     }
 
+}
+
+.services {
+    background-color: rgba(243, 243, 243, 1);
+
+    h1 {
+        text-align: center;
+        color: #002c41;
+        font-size: 3rem;
+        font-weight: 700;
+    }
+
+    .card {
+        box-shadow: 0 0 21px rgba(0, 0, 0, 0.08);
+        border-radius: 0;
+        display: flex;
+        position: relative;
+
+        .card-img {
+            border-radius: 0;
+        }
+
+        .card-title {
+            font-weight: 700;
+            color: #002c41;
+
+            @media (min-width: 992px) and (max-width: 1279px) {
+                font-size: 1.25rem;
+            }
+        }
+
+        .card-footer {
+            background-color: #002c41;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            border-radius: 0;
+            border-top: 0;
+            border-right: 9px solid $yellow;
+            text-align: center;
+
+            @media (max-width: 767px) {
+                position: static;
+            }
+        }
+
+        .btn-details {
+            font-size: 17px;
+            text-transform: uppercase;
+            color: $yellow;
+        }
+    }
+}
+
+.information {
+    h1 {
+        text-align: center;
+        color: #002c41;
+        font-size: 3rem;
+        font-weight: 700;
+    }
+
+    .card {
+        border-radius: 0;
+
+        .card-img {
+            border-radius: 0;
+        }
+
+        .card-img-overlay {
+            top: auto;
+
+            .card-overlay-text {
+                border-left: 4px solid $yellow;
+            }
+
+            .card-title {
+                font-weight: 700;
+                color: #fff;
+            }
+
+            a {
+                font-size: 20px;
+            }
+        }
+    }
+
+
+}
+
+footer {
+    background-color: #002c41;
+    color: #fff;
+
+    .footer-nav a {
+        text-transform: uppercase;
+        color: #fff;
+    }
+
+    .vertical-line {
+        border-left: 2px solid $yellow;
+        height: 15px;
+    }
+
+    .btn-feedback {
+        color: #fff;
+        text-transform: uppercase;
+        background-color: rgba(0, 87, 144, 1);
+        padding: 1rem 2.5rem;
+        border-radius: 0;
+
+        &:hover {
+            background-color: rgba(0, 87, 144, 0.7);
+            transition: 0.3s;
+            color: #fff;
+        }
+    }
+
+    .btn-outline-yellow {
+        color: $yellow;
+        font-size: 18px;
+        border-radius: 0;
+        padding: 1rem 2rem;
+        border: 2px solid $yellow;
+        text-transform: uppercase;
+
+        &:hover {
+            color: #002c44;
+            background-color: $yellow;
+            transition: 0.3s;
+        }
+    }
+}
+
+.footer-bottom-line {
+    background-color: #001d2b;
+    color: #729fb4;
 }
