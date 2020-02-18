@@ -1,62 +1,49 @@
 {% load link_holders %}{% load static %}
-<div class="acgh-body">
-    <div class="header-slider py-5">
-        <div class="container">
-            <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-                    <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-                    <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-                </ol>
-                <div class="carousel-inner">
-                    <div class="carousel-item ml-5 active">
-                        <div class="row align-items-center">
-                            <div class="col-lg-5">
-                                <h1>Аттестационный<br>центр ООО “АЦГХ” 1</h1>
-                                <p>ООО «АЦГХ» является членом Саморегулируемой организации Ассоциация «НАКС»</p>
-                                <div class="mb-3">
-                                    <a href="#" class="text-yellow mr-2">naks.ru</a>
-                                    <a href="#" class="text-yellow">spks.naks.ru</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item ml-5">
-                        <div class="row align-items-center">
-                            <div class="col-lg-5">
-                                <h1>Аттестационный<br>центр ООО “АЦГХ” 2</h1>
-                                <p>ООО «АЦГХ» является членом Саморегулируемой организации Ассоциация «НАКС»</p>
-                                <div class="mb-3">
-                                    <a href="#" class="text-yellow mr-2">naks.ru</a>
-                                    <a href="#" class="text-yellow">spks.naks.ru</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item ml-5">
-                        <div class="row align-items-center">
-                            <div class="col-lg-5">
-                                <h1>Аттестационный<br>центр ООО “АЦГХ” 3</h1>
-                                <p>ООО «АЦГХ» является членом Саморегулируемой организации Ассоциация «НАКС»</p>
-                                <div class="mb-3">
-                                    <a href="#" class="text-yellow mr-2">naks.ru</a>
-                                    <a href="#" class="text-yellow">spks.naks.ru</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+<footer class="py-5">
+    <div class="container">
+        <div class="row align-items-center align-items-lg-start">
+            <div class="col-sm-6 col-lg-2 col-xl-3 text-center text-sm-left mb-4 mb-sm-0">
+                <a class="img-fluid" href="#"><img src="{% static '/img/acgh-logo.png' %}" alt="Логотип АЦГХ"></a>
+            </div>
+            <div class="col-sm-6 col-lg-2 col-xl-3 text-center text-sm-right text-lg-left">
+                <div class="footer-nav">
+                    <a class="d-lg-block mb-2 px-1" href="#">Главная</a>
+                    <span class="vertical-line d-inline-block d-lg-none"></span>
+                    <a class="d-lg-block mb-2 px-1" href="#">О компании</a>
+                    <span class="vertical-line d-inline-block d-lg-none"></span>
+                    <a class="d-lg-block mb-2 px-1" href="#">Услуги</a>
+                    <span class="vertical-line d-inline-block d-lg-none"></span>
+                    <a class="d-lg-block px-1" href="#">Контакты</a>
                 </div>
-                <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
-                <button class="btn btn-yellow">Подать заявку онлайн</button>
+            </div>
+            <div class="col-sm-6 col-lg-4 col-xl-3 text-center text-sm-left my-4 my-sm-0">
+                <div class="mb-2">
+                    <img src="{% static '/img/acgh-phone-icon.png' %}" class="mr-2" alt="">
+                    <a href="tel:+79256011400" class="text-yellow mr-2">+7(925)601-14-00</a>
+                </div>
+                <div class="mb-2">
+                    <img src="{% static '/img/acgh-mail-icon.png' %}" class="mr-2" alt="">
+                    <a href="mailto:ac-mosgaz@yandex.ru" class="text-white">ac-mosgaz@yandex.ru</a>
+                </div>
+                <div>
+                    <img src="{% static '/img/acgh-time-icon.png' %}" class="mr-2" alt="">
+                    <span>Время работы с 10.00 до 17.00</span>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 col-xl-3 text-center text-sm-right">
+                <button class="btn btn-outline-yellow mb-4" type="button">Авторизация в ЭДО НАКС</button>
+                <button class="btn btn-feedback" type="button" id="button-feedback">Обратная связь</button>
             </div>
         </div>
     </div>
-    </header>
+</footer>
+<div class="footer-bottom-line py-4">
+    <div class="container">
+        <div class="row justify-content-between">
+            <div class="col-sm-6 order-2 order-sm-1 text-center text-sm-left">© 2019 Все права защищены</div>
+            <div class="col-sm-6 order-1 order-sm-2 text-center text-sm-right">
+                <a href="#" class="text-yellow" target="_blank">Политика обработки персональных данных</a>
+            </div>
+        </div>
+    </div>
 </div>

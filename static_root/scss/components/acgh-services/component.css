@@ -1,0 +1,74 @@
+@charset "UTF-8";
+.text-yellow {
+  color: #ffc003; }
+
+a.text-yellow:hover {
+  color: #ffc003; }
+
+.services {
+  background-color: #f3f3f3; }
+  .services h1 {
+    text-align: center;
+    color: #002c41;
+    font-size: 3rem;
+    font-weight: 700; }
+  .services .nav-pills .nav-link.active {
+    background-color: #ffc003;
+    color: #002c44;
+    position: relative; }
+    .services .nav-pills .nav-link.active::after {
+      content: '';
+      position: absolute;
+      /* Абсолютное позиционирование */
+      left: 50%;
+      bottom: -45px;
+      margin-right: -50%;
+      transform: translate(-50%, -50%);
+      /* Положение треугольника */
+      border: 15px solid transparent;
+      /* Прозрачные границы */
+      border-top: 15px solid #ffc003;
+      /* Добавляем треугольник */ }
+    .services .nav-pills .nav-link.active:hover {
+      background-color: #ffc003; }
+  .services .nav-pills .nav-link {
+    background-color: #002c41;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 0;
+    padding: 1rem;
+    font-size: 21px; }
+    .services .nav-pills .nav-link:hover {
+      background-color: #005790;
+      transition: 0.3s; }
+  .services .card {
+    box-shadow: 0 0 21px rgba(0, 0, 0, 0.08);
+    border-radius: 0;
+    display: flex;
+    position: relative; }
+    .services .card .card-img {
+      border-radius: 0; }
+    .services .card .card-title {
+      font-weight: 700;
+      color: #002c41; }
+      @media (min-width: 992px) and (max-width: 1279px) {
+        .services .card .card-title {
+          font-size: 1.25rem; } }
+    .services .card .card-footer {
+      background-color: #002c41;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      border-radius: 0;
+      border-top: 0;
+      border-right: 9px solid #ffc003;
+      text-align: center; }
+      @media (max-width: 767px) {
+        .services .card .card-footer {
+          position: static; } }
+    .services .card .btn-details {
+      font-size: 17px;
+      text-transform: uppercase;
+      color: #ffc003; }
+
+/*# sourceMappingURL=component.css.map */

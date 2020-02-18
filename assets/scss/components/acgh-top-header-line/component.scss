@@ -30,12 +30,21 @@ a.text-yellow {
             margin: 0;
         }
 
+        form {
+            &:hover {
+                background-color: rgba(0, 44, 65, 0.6);
+                transition: 0.3s;
+            }
+        }
+
         .form-control {
             color: #fff;
             padding: 1rem;
             height: auto;
             border-left: 2px solid #113146 !important;
             border-radius: 0;
+
+
         }
 
         .input-group-append {
@@ -43,7 +52,7 @@ a.text-yellow {
             border-right: 2px solid #113146;
 
 
-            .btn {
+            .btn-head-search {
                 padding: 1rem;
                 border-radius: 0;
             }
@@ -106,7 +115,6 @@ a.text-yellow {
         }
 
         .navbar-toggler {
-            // border-radius: 0;
             border: none;
             color: #fff;
 
@@ -171,6 +179,12 @@ a.text-yellow {
         .control-prev,
         .control-next {
             padding: 1rem;
+
+            &:hover {
+                text-decoration: none;
+                background-color: rgba(0, 44, 65, 0.6);
+                transition: 0.3s;
+            }
         }
     }
 
@@ -286,87 +300,87 @@ a.text-yellow {
     }
 }
 
-.information {
-    h1 {
-        text-align: center;
-        color: #002c41;
-        font-size: 3rem;
-        font-weight: 700;
-    }
+// .information {
+//     h1 {
+//         text-align: center;
+//         color: #002c41;
+//         font-size: 3rem;
+//         font-weight: 700;
+//     }
 
-    .card {
-        border-radius: 0;
+//     .card {
+//         border-radius: 0;
 
-        .card-img {
-            border-radius: 0;
-        }
+//         .card-img {
+//             border-radius: 0;
+//         }
 
-        .card-img-overlay {
-            top: auto;
+//         .card-img-overlay {
+//             top: auto;
 
-            .card-overlay-text {
-                border-left: 4px solid $yellow;
-            }
+//             .card-overlay-text {
+//                 border-left: 4px solid $yellow;
+//             }
 
-            .card-title {
-                font-weight: 700;
-                color: #fff;
-            }
+//             .card-title {
+//                 font-weight: 700;
+//                 color: #fff;
+//             }
 
-            a {
-                font-size: 20px;
-            }
-        }
-    }
+//             a {
+//                 font-size: 20px;
+//             }
+//         }
+//     }
 
 
-}
+// }
 
-footer {
-    background-color: #002c41;
-    color: #fff;
+// footer {
+//     background-color: #002c41;
+//     color: #fff;
 
-    .footer-nav a {
-        text-transform: uppercase;
-        color: #fff;
-    }
+//     .footer-nav a {
+//         text-transform: uppercase;
+//         color: #fff;
+//     }
 
-    .vertical-line {
-        border-left: 2px solid $yellow;
-        height: 15px;
-    }
+//     .vertical-line {
+//         border-left: 2px solid $yellow;
+//         height: 15px;
+//     }
 
-    .btn-feedback {
-        color: #fff;
-        text-transform: uppercase;
-        background-color: rgba(0, 87, 144, 1);
-        padding: 1rem 2.5rem;
-        border-radius: 0;
+//     .btn-feedback {
+//         color: #fff;
+//         text-transform: uppercase;
+//         background-color: rgba(0, 87, 144, 1);
+//         padding: 1rem 2.5rem;
+//         border-radius: 0;
 
-        &:hover {
-            background-color: rgba(0, 87, 144, 0.7);
-            transition: 0.3s;
-            color: #fff;
-        }
-    }
+//         &:hover {
+//             background-color: rgba(0, 87, 144, 0.7);
+//             transition: 0.3s;
+//             color: #fff;
+//         }
+//     }
 
-    .btn-outline-yellow {
-        color: $yellow;
-        font-size: 18px;
-        border-radius: 0;
-        padding: 1rem 2rem;
-        border: 2px solid $yellow;
-        text-transform: uppercase;
+//     .btn-outline-yellow {
+//         color: $yellow;
+//         font-size: 18px;
+//         border-radius: 0;
+//         padding: 1rem 2rem;
+//         border: 2px solid $yellow;
+//         text-transform: uppercase;
 
-        &:hover {
-            color: #002c44;
-            background-color: $yellow;
-            transition: 0.3s;
-        }
-    }
-}
+//         &:hover {
+//             color: #002c44;
+//             background-color: $yellow;
+//             transition: 0.3s;
+//         }
+//     }
+// }
 
-.footer-bottom-line {
-    background-color: #001d2b;
-    color: #729fb4;
-}
+// .footer-bottom-line {
+//     background-color: #001d2b;
+//     color: #729fb4;
+// }

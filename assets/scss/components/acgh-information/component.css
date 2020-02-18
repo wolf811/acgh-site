@@ -1,0 +1,41 @@
+.text-yellow {
+  color: #ffc003; }
+
+a.text-yellow:hover {
+  color: #ffc003; }
+
+h1 {
+  text-align: center;
+  color: #002c41;
+  font-size: 3rem;
+  font-weight: 700; }
+
+.btn-yellow {
+  color: #002c44;
+  font-size: 18px;
+  font-weight: 700;
+  border-radius: 0;
+  padding: 1rem 2rem;
+  border: 2px solid #ffc003;
+  background-color: #ffc003;
+  text-transform: uppercase; }
+  .btn-yellow:hover {
+    color: #ffc003;
+    background-color: transparent;
+    transition: 0.3s; }
+
+.information .card {
+  border-radius: 0; }
+  .information .card .card-img {
+    border-radius: 0; }
+  .information .card .card-img-overlay {
+    top: auto; }
+    .information .card .card-img-overlay .card-overlay-text {
+      border-left: 4px solid #ffc003; }
+    .information .card .card-img-overlay .card-title {
+      font-weight: 700;
+      color: #fff; }
+    .information .card .card-img-overlay a {
+      font-size: 20px; }
+
+/*# sourceMappingURL=component.css.map */

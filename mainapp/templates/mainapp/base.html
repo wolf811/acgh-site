@@ -53,34 +53,34 @@
 <body>
     <!-- Include Modal -->
     {% include 'mainapp/includes/modal-window.html' %}
-    {% comment %} <div w3-include-html="includes/modal-window.html"></div> {% endcomment %}
     <!-- End Include Modal -->
     <!-- {% include 'mainapp/includes/admin_panel.html' %} -->
     <!--include components order by number in admin panel -->
-    {% for site_comp in site.components %}
-    {% comment %} {% if site_comp.component.component_type == 'top_addr_line' or site_comp.component.component_type == 'main_menu' or site_comp.component.component_type == 'inner_head'%} {% endcomment %}
-    {% if site_comp.component.component_type in 'top_addr_line main_menu inner_head'%}
-    {% include site_comp %}
-    {% endif %}
-    {% endfor %}
     <!-- Include main-banner on main page -->
     {% if request.resolver_match.url_name == 'index' %}
     {% for site_comp in site.components %}
-    {% if site_comp.component.component_type == 'main_banner' %}
+    {% if site_comp.component.component_type in 'main_menu main_page_content advertising_block' %}
+    {% include site_comp %}
+    {% endif %}
+    {% endfor %}
+    {% endif %}
+    {% if request.resolver_match.url_name != 'index' %}
+    {% for site_comp in site.components %}
+    {% if site_comp.component.component_type == 'inner_head' %}
     {% include site_comp %}
     {% endif %}
     {% endfor %}
     {% endif %}
     {% block content %}
     {% endblock content %}
-    {% for site_comp in site.components %}
-    {% if site_comp.component.component_type in 'advertising_block attestats' %}
-    {% include site_comp %}
-    {% endif %}
-    {% endfor %}
     {% if partners|length > 1 %}
     {% include 'mainapp/includes/partners.html' %}
     {% endif %}
+    {% for site_comp in site.components %}
+    {% if site_comp.component.component_type in 'footer'%}
+    {% include site_comp %}
+    {% endif %}
+    {% endfor %}
     <!-- Include Modal -->
     <!-- {% include 'mainapp/includes/basement.html' %} -->
     <!-- End Include Modal -->

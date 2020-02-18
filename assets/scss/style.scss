@@ -10,6 +10,7 @@
 @import "_personal.scss";
 @import "_page_details.scss";
 @import "_sub-menu.scss";
+// @import "_acgh-style-common.scss";
 
 .top-right-absolute {
     position: absolute;
@@ -26,9 +27,9 @@
     max-width: 100%;
     object-fit: contain;
     flex: 1 0 33%;
-  }
+}
 
-  .news-details-atteched-image:hover {
+.news-details-atteched-image:hover {
     opacity: 0.8;
     transition: 0.3s;
-  }
+}

@@ -310,3 +310,6 @@ def test_component(request, pk):
     }
 
     return render(request, 'mainapp/component_template.html', content)
+
+def inner(request):
+    return render(request, 'mainapp/inner.html')
