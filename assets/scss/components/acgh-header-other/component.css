@@ -109,18 +109,40 @@ h1 {
   font-weight: 700;
   color: #002c41; }
 
-.services-detail .text-yellow-bcg {
+.services-detail .block-yellow {
+  position: relative;
   background-color: #fea901; }
-
-.services-detail .actyvity {
+  .services-detail .block-yellow .block-yellow-content {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%); }
+    @media (min-width: 600px) and (max-width: 991px) {
+      .services-detail .block-yellow .block-yellow-content {
+        left: 15%; } }
+    @media (max-width: 599px) {
+      .services-detail .block-yellow .block-yellow-content {
+        left: 20%; } }
+  @media (max-width: 1200px) {
+    .services-detail .block-yellow img {
+      width: 90px; } }
+  .services-detail .block-yellow h3 {
+    line-height: 30px; }
+    @media (max-width: 991px) {
+      .services-detail .block-yellow h3 {
+        font-size: 17px;
+        line-height: 20px; } }
+.actyvity {
   background-color: #f3f3f3;
   border-left: 4px solid #ffc003; }
-  .services-detail .actyvity .activity-text-bold {
+  .actyvity .activity-text-bold {
     font-weight: 700;
     color: #002c41; }
 
-.services-detail .link-doc {
+.link-doc {
   color: #002c41;
   font-weight: 700; }
+
+.img-container img {
+  width: 100%; }
 
 /*# sourceMappingURL=component.css.map */

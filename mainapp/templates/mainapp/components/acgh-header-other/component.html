@@ -28,7 +28,7 @@
                         </div>
                     </div>
                     <div class="col-xl-2 d-none d-xl-block">
-                        <button class="btn btn-feedback float-right" type="button" id="button-feedback">Обратная связь</button>
+                        <button class="btn btn-feedback float-right" type="button" id="button-feedback" data-toggle="modal" data-target="#feedbackModal">Обратная связь</button>
                     </div>
                 </div>
                 <hr>
@@ -72,13 +72,17 @@
         <p class="text-secondary">Технологии сварочных и наплавочных работ, выполняемых при изготовлении, монтаже, ремонте и реконструкции опасных производственных объектов, должны проходить обязательную аттестацию. Аттестация подразделяется на исследовательскую и производственную.</p>
         <p class="text-secondary">Исследовательская аттестация проводится при подготовке новых, ранее не аттестованных технологий. Производственная аттестация осуществляется для подтверждения того, что конкретная организация обладает всеми организационными и техническими возможностями, а также квалифицированными кадрами для выполнения работ по аттестуемым технологиям, а сварные соединения, полученные по данным технологиям в производственных условиях, соответствуют требованиям нормативной документации.</p>
         <div class="row align-items-stretch my-5">
-            <div class="col-lg-8">
-                <img src="{% static '/img/img-welder.png' %}" class="img-fluid" alt="photo">
+            <div class="col-lg-9">
+                <div class="img-container">
+                    <img src="{% static '/img/img-welder.png' %}" class="img-fluid" alt="photo">
+                </div>
             </div>
-            <div class="col-lg-4">
-                <div class="text-yellow-bcg p-3 p-sm-4 p-xl-5 d-sm-flex d-lg-block h-100">
-                    <img src="{% static '/img/acgh-check-icon.png' %}" class="mb-4" alt="icon">
-                    <h3>Исследовательская аттестация проводится при подготовке новых, ранее не аттестованных технологий.</h3>
+            <div class="col-lg-3">
+                <div class="block-yellow d-sm-flex d-lg-block h-100">
+                    <img src="{% static '/img/acgh-check-icon.png' %}" class="p-3 p-sm-4 p-xl-5" alt="icon">
+                    <div class="block-yellow-content p-3 p-sm-4 p-xl-5">
+                        <h3>Исследовательская аттестация проводится при подготовке новых, ранее не аттестованных технологий.</h3>
+                    </div>
                 </div>
             </div>
         </div>
@@ -89,7 +93,9 @@
         <div class="my-5">
             <div class="row">
                 <div class="col-lg-5 mb-5 mb-lg-3">
-                    <img src="{% static '/img/video-img.png' %}" class="img-fluid" alt="video">
+                    <div class="img-container">
+                        <img src="{% static '/img/video-img.png' %}" class="img-fluid" alt="video">
+                    </div>
                 </div>
                 <div class="col-lg-7">
                     <h3>Исследовательская аттестация проводится при подготовке новых.</h3>
