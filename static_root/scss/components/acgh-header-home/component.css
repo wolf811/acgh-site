@@ -4,6 +4,27 @@
 a.text-yellow:hover {
   color: #ffc003; }
 
+h1 {
+  text-align: center;
+  color: #002c41;
+  font-size: 3rem;
+  font-weight: 700; }
+
+.btn-yellow {
+  color: #002c44;
+  font-size: 18px;
+  font-weight: 700;
+  border-radius: 0;
+  padding: 1rem 2rem;
+  border: 2px solid #ffc003;
+  background-color: #ffc003;
+  text-transform: uppercase; }
+  .btn-yellow:hover {
+    color: #ffc003;
+    background-color: transparent;
+    transition: 0.3s; }
+
+/* Modal Window */
 .header-home {
   background-image: url(../../../../static_root/img/acgh-head-bcg.png);
   background-repeat: no-repeat;
@@ -93,7 +114,8 @@ a.text-yellow:hover {
       border-left: 4px solid #ffc003; }
     .header-slider .carousel h1 {
       font-size: 3.5rem;
-      font-weight: 700; }
+      text-align: left;
+      color: #fff; }
       @media (max-width: 767px) {
         .header-slider .carousel h1 {
           font-size: 2rem; } }
@@ -114,18 +136,5 @@ a.text-yellow:hover {
         text-decoration: none;
         background-color: rgba(0, 44, 65, 0.6);
         transition: 0.3s; }
-  .header-slider .btn-yellow {
-    color: #002c44;
-    font-size: 18px;
-    font-weight: 700;
-    border-radius: 0;
-    padding: 1rem 2rem;
-    border: 2px solid #ffc003;
-    background-color: #ffc003;
-    text-transform: uppercase; }
-    .header-slider .btn-yellow:hover {
-      color: #ffc003;
-      background-color: transparent;
-      transition: 0.3s; }
 
 /*# sourceMappingURL=component.css.map */

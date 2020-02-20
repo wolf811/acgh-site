@@ -10,11 +10,13 @@ h1 {
   font-size: 3rem;
   font-weight: 700; }
 
+.btn {
+  border-radius: 0; }
+
 .btn-yellow {
   color: #002c44;
   font-size: 18px;
   font-weight: 700;
-  border-radius: 0;
   padding: 1rem 2rem;
   border: 2px solid #ffc003;
   background-color: #ffc003;
@@ -23,6 +25,15 @@ h1 {
     color: #ffc003;
     background-color: transparent;
     transition: 0.3s; }
+
+.btn-primary {
+  color: #fff;
+  background-color: #005790;
+  border-color: #005790; }
+  .btn-primary:hover {
+    background-color: rgba(0, 87, 144, 0.7);
+    transition: 0.3s;
+    color: #fff; }
 
 .header-home {
   background-image: url(../../../../static_root/img/acgh-head-bcg.png);
@@ -43,13 +54,20 @@ h1 {
     padding: 1rem;
     height: auto;
     border-left: 2px solid #113146 !important;
-    border-radius: 0; }
+    border-radius: 0;
+    background-color: transparent; }
+    .wrap-header-main .top-header-line .form-control:focus {
+      border-color: #ffc003;
+      box-shadow: 0 0 0 0.2rem rgba(255, 192, 3, 0.25); }
   .wrap-header-main .top-header-line .input-group-append {
     border-left: 2px solid #113146;
     border-right: 2px solid #113146; }
     .wrap-header-main .top-header-line .input-group-append .btn-head-search {
       padding: 1rem;
       border-radius: 0; }
+      .wrap-header-main .top-header-line .input-group-append .btn-head-search:focus {
+        border-color: #ffc003;
+        box-shadow: 0 0 0 0.2rem rgba(255, 192, 3, 0.25); }
   .wrap-header-main .top-header-line .head-contact-left,
   .wrap-header-main .top-header-line .head-contact-right {
     padding: 1rem; }

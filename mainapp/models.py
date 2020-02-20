@@ -523,6 +523,7 @@ class Component(models.Model):
         ('contact_block', 'Блок с контактами'),
         ('advertising_block', 'Блок с рекламой'),
         ('partners_block', 'Блок с партнерами'),
+        ('modal', 'Модальное окно'),
         ('footer', 'Футер')
     )
     title = models.CharField(u'Название компонента', max_length=60)

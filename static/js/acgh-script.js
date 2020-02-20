@@ -9,3 +9,9 @@ newsContent.each(
         }
     }
 );
+
+
+$('#sendQuestion').click(function() {
+    $('.form-feedback').hide();
+    $('.confirmation-sending').show();
+});

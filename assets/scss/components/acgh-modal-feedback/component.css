@@ -35,18 +35,25 @@ h1 {
     transition: 0.3s;
     color: #fff; }
 
-.information .card {
+.acgh-modal-feedback .modal-content {
   border-radius: 0; }
-  .information .card .card-img {
-    border-radius: 0; }
-  .information .card .card-img-overlay {
-    top: auto; }
-    .information .card .card-img-overlay .card-overlay-text {
-      border-left: 4px solid #ffc003; }
-    .information .card .card-img-overlay .card-title {
-      font-weight: 700;
-      color: #fff; }
-    .information .card .card-img-overlay a {
-      font-size: 20px; }
+
+.acgh-modal-feedback .modal-header {
+  text-transform: uppercase;
+  color: #002c41;
+  border-bottom-color: #ffc003; }
+
+.acgh-modal-feedback .modal-footer {
+  border-top-color: #ffc003; }
+
+.acgh-modal-feedback .form-control {
+  border-radius: 0; }
+  .acgh-modal-feedback .form-control:focus {
+    border-color: #ffc003;
+    box-shadow: 0 0 0 0.2rem rgba(255, 192, 3, 0.25); }
+
+.acgh-modal-feedback .close {
+  color: #002c41;
+  font-size: 1rem; }
 
 /*# sourceMappingURL=component.css.map */

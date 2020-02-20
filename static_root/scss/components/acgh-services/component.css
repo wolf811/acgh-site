@@ -5,13 +5,28 @@
 a.text-yellow:hover {
   color: #ffc003; }
 
+h1 {
+  text-align: center;
+  color: #002c41;
+  font-size: 3rem;
+  font-weight: 700; }
+
+.btn-yellow {
+  color: #002c44;
+  font-size: 18px;
+  font-weight: 700;
+  border-radius: 0;
+  padding: 1rem 2rem;
+  border: 2px solid #ffc003;
+  background-color: #ffc003;
+  text-transform: uppercase; }
+  .btn-yellow:hover {
+    color: #ffc003;
+    background-color: transparent;
+    transition: 0.3s; }
+
 .services {
   background-color: #f3f3f3; }
-  .services h1 {
-    text-align: center;
-    color: #002c41;
-    font-size: 3rem;
-    font-weight: 700; }
   .services .nav-pills .nav-link.active {
     background-color: #ffc003;
     color: #002c44;

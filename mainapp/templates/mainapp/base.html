@@ -53,21 +53,20 @@
 <body>
     <!-- Include Modal -->
     {% include 'mainapp/includes/modal-window.html' %}
-    {% include 'mainapp/includes/feedback-modal.html' %}
     <!-- End Include Modal -->
     <!-- {% include 'mainapp/includes/admin_panel.html' %} -->
     <!--include components order by number in admin panel -->
     <!-- Include main-banner on main page -->
     {% if request.resolver_match.url_name == 'index' %}
     {% for site_comp in site.components %}
-    {% if site_comp.component.component_type in 'main_menu main_page_content advertising_block' %}
+    {% if site_comp.component.component_type in 'main_menu main_page_content advertising_block modal' %}
     {% include site_comp %}
     {% endif %}
     {% endfor %}
     {% endif %}
     {% if request.resolver_match.url_name != 'index' %}
     {% for site_comp in site.components %}
-    {% if site_comp.component.component_type == 'inner_head' %}
+    {% if site_comp.component.component_type in 'inner_head modal' %}
     {% include site_comp %}
     {% endif %}
     {% endfor %}
@@ -78,7 +77,7 @@
     {% include 'mainapp/includes/partners.html' %}
     {% endif %}
     {% for site_comp in site.components %}
-    {% if site_comp.component.component_type in 'footer'%}
+    {% if site_comp.component.component_type in 'footer modal'%}
     {% include site_comp %}
     {% endif %}
     {% endfor %}

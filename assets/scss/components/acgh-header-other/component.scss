@@ -185,6 +185,12 @@
 .link-doc {
     color: #002c41;
     font-weight: 700;
+
+    &:hover {
+        color: #002c41;
+        transition: 0.3s;
+        opacity: 0.7;
+    }
 }
 
 .img-container img {
