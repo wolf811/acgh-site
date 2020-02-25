@@ -71,6 +71,14 @@
     {% endif %}
     {% endfor %}
     {% endif %}
+    {% comment %} {% if request.resolver_match.url_name == 'inner' %}
+    {% for site_comp in site.components %}
+    {% if site_comp.component.component_type in 'inner_head modal' %}
+    {% include site_comp %}
+    {% endif %}
+    {% endfor %}
+    {% endif %}
+    {% endcomment %}
     {% block content %}
     {% endblock content %}
     {% if partners|length > 1 %}

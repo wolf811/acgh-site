@@ -44,7 +44,8 @@ urlpatterns = [
     path('test_component/<slug:pk>', mainapp.test_component, name='test_component'),
     path('accept_order/', mainapp.accept_order, name="accept_order"),
     path('captcha/', include('captcha.urls')),
-    path('inner/', mainapp.inner),
+    path('inner/', mainapp.inner, name="inner"),
+    path('acgh-contacts/', mainapp.acgh_contacts, name="acgh_contacts"),
 ]
 
 if settings.DEBUG:

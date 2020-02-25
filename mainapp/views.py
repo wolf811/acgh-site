@@ -313,3 +313,6 @@ def test_component(request, pk):
 
 def inner(request):
     return render(request, 'mainapp/inner.html')
+
+def acgh_contacts(request):
+    return render(request, 'mainapp/acgh-contacts.html')

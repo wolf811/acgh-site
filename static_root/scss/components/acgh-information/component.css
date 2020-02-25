@@ -10,11 +10,13 @@ h1 {
   font-size: 3rem;
   font-weight: 700; }
 
+.btn {
+  border-radius: 0; }
+
 .btn-yellow {
   color: #002c44;
   font-size: 18px;
   font-weight: 700;
-  border-radius: 0;
   padding: 1rem 2rem;
   border: 2px solid #ffc003;
   background-color: #ffc003;
@@ -23,6 +25,15 @@ h1 {
     color: #ffc003;
     background-color: transparent;
     transition: 0.3s; }
+
+.btn-primary {
+  color: #fff;
+  background-color: #005790;
+  border-color: #005790; }
+  .btn-primary:hover {
+    background-color: rgba(0, 87, 144, 0.7);
+    transition: 0.3s;
+    color: #fff; }
 
 .information .card {
   border-radius: 0; }
